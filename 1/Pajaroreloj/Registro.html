@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <!-- Header con menú -->
+  <header class="header">
+    <h1 class="logo">Pájaro Toh</h1>
+    <nav class="nav-menu">
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./Feed.html">Feed</a></li>
+        <li><a href="#">Register</a></li>
+        <li><a href="/SignIn">Sign In</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <div class="Formularioregistro">
+    <h1>Regístrate</h1>
+    <form action="#" method="post">
+      <!-- Primer fieldset -->
+      <fieldset>
+        <legend>Información Personal</legend>
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" id="contraseña" name="contraseña" placeholder="Crea una contraseña" required>
+      </fieldset>
+
+      <!-- Segundo fieldset -->
+      <fieldset>
+        <legend>Información Adicional</legend>
+        <label for="pais">País:</label>
+        <select id="pais" name="pais" required>
+          <option value="">Selecciona tu país</option>
+          <option value="mexico">México</option>
+          <option value="usa">Estados Unidos</option>
+          <option value="canada">Canadá</option>
+          <option value="españa">España</option>
+          <option value="otro">Otro</option>
+        </select>
+
+        <label for="descripcion">Descripción Personal:</label>
+        <textarea id="descripcion" name="descripcion" placeholder="Escribe algo sobre ti"></textarea>
+      </fieldset>
+
+      <!-- Botón para enviar -->
+      <button type="submit">Registrar</button>
+    </form>
+  </div>
+</body>
+</html>
