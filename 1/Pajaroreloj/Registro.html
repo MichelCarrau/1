@@ -7,23 +7,29 @@
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-  <!-- Header con menú -->
+  <!-- Encabezado principal -->
   <header class="header">
-    <h1 class="logo">Pájaro Toh</h1>
+    <h1 class="logo">FaunaMx</h1>
     <nav class="nav-menu">
+      <input type="checkbox" class="menu-toggle" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">☰</label>
       <ul class="nav-links">
         <li><a href="../index.html">Home</a></li>
-        <li><a href="./Feed.html">Feed</a></li>
-        <li><a href="#">Register</a></li>
+        <BR>
+        <li><a href="Feed.html">Feed</a></li>
+        <BR>
+        <li><a href="Registro.html">Register</a></li>
+        <BR>
         <li><a href="/SignIn">Sign In</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Contenido principal -->
-  <div class="Formularioregistro">
-    <h1>Regístrate</h1>
-    <form action="#" method="post">
+  <div class="form-container">
+    <BR><BR>
+    <h1 class="form-title">Regístrate</h1>
+    <form action="#" method="post" class="form-register">
       <!-- Primer fieldset -->
       <fieldset>
         <legend>Información Personal</legend>
@@ -55,7 +61,7 @@
       </fieldset>
 
       <!-- Botón para enviar -->
-      <button type="submit">Registrar</button>
+      <button type="submit" class="btn-submit">Registrar</button>
     </form>
   </div>
 </body>
